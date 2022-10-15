@@ -1,0 +1,20 @@
+[package]
+name = "iyes_splash"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bevy_ecs = "0.8"
+bevy_app = "0.8"
+
+[dependencies.iyes_loopless]
+version = "0.7.0"
+optional = true
+default-features = false
+features = ["states", "iyes_progress?/iyes_loopless"]
+
+[dependencies.iyes_progress]
+version = "0.4.0"
+optional = true
